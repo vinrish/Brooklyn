@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/brooklyn"
+            android:textSize="34sp"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="4dp"
+            android:background="#000">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowOrderPreserved="false"
+                android:padding="14dp"
+                android:rowCount="2">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/news"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="8dp"
+                    cardview:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_assessment"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="#ffff"
+                            android:scaleType="fitCenter"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="@string/news_amp_notices"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/events"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="8dp"
+                    cardview:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_event"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="#fff"
+                            android:scaleType="fitCenter"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/events"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ebooks"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="8dp"
+                    cardview:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_learn"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="#ffff"
+                            android:scaleType="fitCenter"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="@string/e_learning"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/timetables"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="8dp"
+                    cardview:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_access_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="#fff"
+                            android:scaleType="fitCenter"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/time_table"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/results"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="8dp"
+                    cardview:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_insert_drive"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="#ffff"
+                            android:scaleType="fitCenter"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="@string/results"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/gallery"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="8dp"
+                    cardview:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:src="@drawable/ic_insert_photo_black_24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="#fff"
+                            android:scaleType="fitCenter"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gallery"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
